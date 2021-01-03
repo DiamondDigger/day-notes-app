@@ -1,0 +1,25 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dayCell {
+  background-color: aquamarine;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  justify-content: flex-start;
+  border: 3px solid;
+  flex-direction: row;
+  margin-right: 2px;
+}
+
+/* .button:hover,
+.button:focus {
+  border: 2px solid rgba(112, 76, 182, 0.4);
+}
+
+.button:active {
+  background-color: rgba(112, 76, 182, 0.2);
+} */

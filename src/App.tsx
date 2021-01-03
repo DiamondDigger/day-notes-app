@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
+import  Calendar  from './features/calendar/Calendar';
 import './App.css';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Counter />
+        <Calendar />
       </header>
     </div>
   );
