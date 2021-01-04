@@ -1,0 +1,47 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  min-height: 400px;
+  max-height: 85%;
+  grid-gap: 10px;
+  border: 2px solid red;
+}
+
+.month {
+  grid-column-start: 3;
+  grid-column-end: 11;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  background: hotpink;
+  border: 2px solid slategray;
+}
+
+.weekCounter {
+  grid-column: 1;
+  grid-row: 1 / 8;
+  background: springgreen;
+}
+
+.weekDays {
+  grid-column: 2 / 9;
+  background: yellow;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.weekDay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.dayCell {
+  border: 2px solid greenyellow;
+}
+
+.dayCell:hover {
+  background: white;
+}
