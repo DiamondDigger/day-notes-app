@@ -1,7 +1,7 @@
 .wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  min-height: 400px;
+  min-height: 50vh;
   max-height: 85%;
   grid-gap: 10px;
   border: 2px solid red;
@@ -13,6 +13,7 @@
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(7, 1fr);
+  gap: 10px 10px;
   background: hotpink;
   border: 2px solid slategray;
 }
@@ -39,9 +40,14 @@
 }
 
 .dayCell {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
   border: 2px solid greenyellow;
+  border-radius: 10%;
 }
 
 .dayCell:hover {
   background: white;
+  transform: translateY(-5px);
 }

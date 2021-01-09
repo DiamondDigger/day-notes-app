@@ -2,7 +2,14 @@
   "name": "day-notes-app",
   "version": "0.1.0",
   "private": true,
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
   "dependencies": {
+    "@material-ui/core": "^4.11.2",
     "@reduxjs/toolkit": "^1.2.5",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",

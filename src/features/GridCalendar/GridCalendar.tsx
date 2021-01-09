@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styles from './GridCalendar.module.css'
 
 const week = [1,2,3,4,5,6,7]
 
 const GridCalendar = () => {
+    const [date, setDate] = useState(new Date())
+
+    const month = date.getMonth();
+    const currentDate = new Date().getDate();
     return (
         <div className={styles.wrapper}>
             <div className={styles.month}>
